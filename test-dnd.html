@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Drag and Drop</title>
+    <style>
+        .container { display: flex; gap: 20px; padding: 20px; }
+        .source { width: 200px; padding: 20px; background: #f0f0f0; }
+        .target { width: 400px; min-height: 300px; background: #e0e0e0; padding: 20px; }
+        .draggable { padding: 10px; margin: 5px; background: white; cursor: move; }
+        .over { background: #d0d0d0; }
+    </style>
+</head>
+<body>
+    <h1>Testing Basic Drag and Drop</h1>
+    <div class="container">
+        <div class="source">
+            <h3>Components</h3>
+            <div class="draggable" draggable="true">Button</div>
+            <div class="draggable" draggable="true">Text</div>
+            <div class="draggable" draggable="true">Input</div>
+        </div>
+        <div class="target" id="dropZone">
+            <h3>Canvas</h3>
+            <p>Drop components here</p>
+        </div>
+    </div>
+    
+    <script>
+        const draggables = document.querySelectorAll('.draggable');
+        const dropZone = document.getElementById('dropZone');
+        
+        draggables.forEach(draggable => {
+            draggable.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('text/plain', e.target.textContent);
+                e.target.style.opacity = '0.5';
+            });
+            
+            draggable.addEventListener('dragend', (e) => {
+                e.target.style.opacity = '';
+            });
+        });
+        
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('over');
+        });
+        
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('over');
+        });
+        
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('over');
+            const data = e.dataTransfer.getData('text/plain');
+            const newEl = document.createElement('div');
+            newEl.className = 'draggable';
+            newEl.textContent = data + ' (dropped)';
+            dropZone.appendChild(newEl);
+        });
+    </script>
+</body>
+</html>

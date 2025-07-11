@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test UI Builder</title>
+</head>
+<body>
+    <h1>Testing UI Builder Drag and Drop</h1>
+    <p>Open the console to see if there are any errors</p>
+    
+    <iframe 
+        src="http://localhost:3004" 
+        width="100%" 
+        height="800" 
+        style="border: 1px solid #ccc;">
+    </iframe>
+    
+    <script>
+        // Monitor console for errors
+        window.addEventListener('message', (e) => {
+            console.log('Message from iframe:', e.data);
+        });
+    </script>
+</body>
+</html>

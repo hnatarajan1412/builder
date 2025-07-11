@@ -1,0 +1,318 @@
+
+> builder@1.0.0 dev
+> vite
+
+
+  VITE v7.0.4  ready in 114 ms
+
+  ➜  Local:   http://localhost:3003/
+  ➜  Network: use --host to expose
+6:14:45 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+6:16:29 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+6:24:09 PM [vite] (client) page reload src/services/hybrid-database.service.ts
+6:24:35 PM [vite] (client) hmr update /src/components/TableDataViewer.tsx, /src/index.css
+6:24:47 PM [vite] (client) hmr update /src/components/TableDataViewer.tsx, /src/index.css
+6:27:51 PM [vite] (client) page reload src/services/hybrid-database.service.ts
+6:28:32 PM [vite] (client) page reload src/services/postgres.service.ts
+6:29:24 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:31:21 PM [vite] (client) page reload src/types/index.ts
+6:33:13 PM [vite] (client) page reload src/stores/builder.store.ts
+6:33:25 PM [vite] (client) page reload src/stores/builder.store.ts
+6:39:54 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:40:02 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:40:11 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:41:19 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:41:28 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:42:14 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:51:47 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:52:44 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:53:43 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:53:43 PM [vite] Internal server error: /home/hnatarajan/dev/projects/claudeflow/builder/src/components/EnhancedDataPanel.tsx: Expected corresponding JSX closing tag for <div>. (531:20)
+
+  529 |         </Dialog.Portal>
+  530 |       </Dialog.Root>
+> 531 |                     </button>
+      |                     ^
+  532 |                     <button
+  533 |                       onClick={() => setNewRelationship({ ...newRelationship, type: 'manyToOne' })}
+  534 |                       className={`p-3 border rounded-lg text-center transition-all ${
+  Plugin: vite:react-babel
+  File: /home/hnatarajan/dev/projects/claudeflow/builder/src/components/EnhancedDataPanel.tsx:531:20
+  529|          </Dialog.Portal>
+  530|        </Dialog.Root>
+  531|                      </button>
+     |                      ^
+  532|                      <button
+  533|                        onClick={() => setNewRelationship({ ...newRelationship, type: 'manyToOne' })}
+      at constructor (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6627:19)
+      at TypeScriptParserMixin.jsxParseElementAt (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4757:16)
+      at TypeScriptParserMixin.jsxParseElement (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4779:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4789:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10826:21)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9790:39
+      at TypeScriptParserMixin.tryParse (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6935:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9790:18)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10795:39
+      at TypeScriptParserMixin.allowInAnd (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12427:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10795:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12494:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11674:28)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10826:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9801:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10779:23)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10775:39
+      at TypeScriptParserMixin.allowInAnd (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12422:16)
+      at TypeScriptParserMixin.parseExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10775:17)
+      at TypeScriptParserMixin.parseReturnStatement (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13142:28)
+      at TypeScriptParserMixin.parseStatementContent (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12798:21)
+      at TypeScriptParserMixin.parseStatementContent (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9527:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12101:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12076:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11686:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+6:54:14 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:54:14 PM [vite] Internal server error: /home/hnatarajan/dev/projects/claudeflow/builder/src/components/EnhancedDataPanel.tsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (532:18)
+
+  530 |       </Dialog.Root>
+  531 |                   </div>
+> 532 |                   <div>
+      |                   ^
+  533 |                     <label className="block text-sm font-medium text-gray-700 mb-2">
+  534 |                       To Table
+  535 |                     </label>
+  Plugin: vite:react-babel
+  File: /home/hnatarajan/dev/projects/claudeflow/builder/src/components/EnhancedDataPanel.tsx:532:18
+  530|        </Dialog.Root>
+  531|                    </div>
+  532|                    <div>
+     |                    ^
+  533|                      <label className="block text-sm font-medium text-gray-700 mb-2">
+  534|                        To Table
+      at constructor (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6627:19)
+      at TypeScriptParserMixin.jsxParseElementAt (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4772:18)
+      at TypeScriptParserMixin.jsxParseElement (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4779:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4789:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10826:21)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9790:39
+      at TypeScriptParserMixin.tryParse (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6935:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9790:18)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10795:39
+      at TypeScriptParserMixin.allowInAnd (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12427:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10795:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12494:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11674:28)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10826:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9801:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10779:23)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10775:39
+      at TypeScriptParserMixin.allowInAnd (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12422:16)
+      at TypeScriptParserMixin.parseExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10775:17)
+      at TypeScriptParserMixin.parseReturnStatement (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13142:28)
+      at TypeScriptParserMixin.parseStatementContent (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12798:21)
+      at TypeScriptParserMixin.parseStatementContent (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9527:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12101:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12076:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11686:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+6:54:24 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:54:24 PM [vite] Internal server error: /home/hnatarajan/dev/projects/claudeflow/builder/src/components/EnhancedDataPanel.tsx: Expected corresponding JSX closing tag for <div>. (531:20)
+
+  529 |         </Dialog.Portal>
+  530 |       </Dialog.Root>
+> 531 |                     </label>
+      |                     ^
+  532 |                     <select
+  533 |                       value={newRelationship.toTable}
+  534 |                       onChange={(e) => setNewRelationship({ ...newRelationship, toTable: e.target.value })}
+  Plugin: vite:react-babel
+  File: /home/hnatarajan/dev/projects/claudeflow/builder/src/components/EnhancedDataPanel.tsx:531:20
+  529|          </Dialog.Portal>
+  530|        </Dialog.Root>
+  531|                      </label>
+     |                      ^
+  532|                      <select
+  533|                        value={newRelationship.toTable}
+      at constructor (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6627:19)
+      at TypeScriptParserMixin.jsxParseElementAt (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4757:16)
+      at TypeScriptParserMixin.jsxParseElement (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4779:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4789:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10826:21)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9790:39
+      at TypeScriptParserMixin.tryParse (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6935:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9790:18)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10795:39
+      at TypeScriptParserMixin.allowInAnd (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12427:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10795:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12494:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11674:28)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10826:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9801:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10779:23)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10775:39
+      at TypeScriptParserMixin.allowInAnd (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12422:16)
+      at TypeScriptParserMixin.parseExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10775:17)
+      at TypeScriptParserMixin.parseReturnStatement (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13142:28)
+      at TypeScriptParserMixin.parseStatementContent (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12798:21)
+      at TypeScriptParserMixin.parseStatementContent (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9527:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12101:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12076:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11686:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+6:54:52 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:55:03 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:55:11 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:55:41 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+6:56:01 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+6:56:13 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+6:57:26 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+6:58:58 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+6:59:06 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+6:59:18 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+6:59:35 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+6:59:46 PM [vite] (client) hmr update /src/components/EnhancedSidePanel.tsx, /src/index.css
+7:02:28 PM [vite] (client) hmr update /src/components/PagesPanel.tsx, /src/index.css
+7:02:37 PM [vite] (client) hmr update /src/components/PagesPanel.tsx, /src/index.css
+7:02:52 PM [vite] (client) hmr update /src/components/PagesPanel.tsx, /src/index.css
+7:02:52 PM [vite] Internal server error: /home/hnatarajan/dev/projects/claudeflow/builder/src/components/PagesPanel.tsx: Unexpected token, expected "}" (232:8)
+
+  230 |             </div>
+  231 |           ))
+> 232 |         )}
+      |         ^
+  233 |       </div>
+  234 |     </div>
+  235 |   );
+  Plugin: vite:react-babel
+  File: /home/hnatarajan/dev/projects/claudeflow/builder/src/components/PagesPanel.tsx:232:8
+  230|              </div>
+  231|            ))
+  232|          )}
+     |          ^
+  233|        </div>
+  234|      </div>
+      at constructor (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6627:19)
+      at TypeScriptParserMixin.unexpected (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6647:16)
+      at TypeScriptParserMixin.expect (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6927:12)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4667:10)
+      at TypeScriptParserMixin.jsxParseElementAt (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4741:36)
+      at TypeScriptParserMixin.jsxParseElement (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4779:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4789:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10826:21)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9790:39
+      at TypeScriptParserMixin.tryParse (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:6935:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9790:18)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10795:39
+      at TypeScriptParserMixin.allowInAnd (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12427:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10795:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12494:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11674:28)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10826:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9801:20)
+      at TypeScriptParserMixin.parseConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10888:29)
+      at TypeScriptParserMixin.parseConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9626:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10880:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10826:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:9801:20)
+      at TypeScriptParserMixin.parseExpressionBase (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10779:23)
+      at /home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10775:39
+      at TypeScriptParserMixin.allowInAnd (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:12427:12)
+      at TypeScriptParserMixin.parseExpression (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:10775:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4662:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4741:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4728:32)
+      at TypeScriptParserMixin.jsxParseElement (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4779:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:4789:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/hnatarajan/dev/projects/claudeflow/builder/node_modules/@babel/parser/lib/index.js:11076:23)
+7:05:22 PM [vite] (client) hmr update /src/components/PagesPanel.tsx, /src/index.css
+7:05:32 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+7:05:55 PM [vite] (client) hmr update /src/components/EnhancedDataPanel.tsx, /src/index.css
+7:06:53 PM [vite] (client) hmr update /src/components/PagesPanel.tsx, /src/index.css

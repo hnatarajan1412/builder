@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Testing Server</h1>
+  <p>If you see this, the server is working.</p>
+  
+  <script>
+    fetch('http://localhost:3003/')
+      .then(res => res.text())
+      .then(text => {
+        document.body.innerHTML += '<h2>Response from server:</h2>';
+        document.body.innerHTML += '<pre>' + text.substring(0, 500) + '...</pre>';
+      })
+      .catch(err => {
+        document.body.innerHTML += '<p style="color:red">Error: ' + err + '</p>';
+      });
+  </script>
+</body>
+</html>
